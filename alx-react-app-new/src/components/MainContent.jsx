@@ -3,36 +3,21 @@ import React from 'react';
 function MainContent() {
   const mainStyle = {
     padding: '20px',
-    margin: '20px',
-    backgroundColor: '#ffffff',
-    color: '#333333',
-    lineHeight: '1.6'
+    backgroundColor: '#f0f0f0',
+    color: '#333',
+    borderRadius: '10px',
+    margin: '20px'
   };
 
-  const paragraphStyle = {
-    fontSize: '1.2rem',
-    marginBottom: '15px'
-  };
-
-  const listStyle = {
-    listStyleType: 'square',
-    paddingLeft: '20px'
-  };
-
-  const listItemStyle = {
-    marginBottom: '8px'
+  const textStyle = {
+    fontSize: '1.2rem'
   };
 
   return (
     <main style={mainStyle}>
-      <p style={paragraphStyle}>
-        Here is some interesting content about my favorite cities...
+      <p style={textStyle}>
+        I love to visit New York, Paris, and Tokyo.
       </p>
-      <ul style={listStyle}>
-        <li style={listItemStyle}>Paris</li>
-        <li style={listItemStyle}>Tokyo</li>
-        <li style={listItemStyle}>New York</li>
-      </ul>
     </main>
   );
 }
