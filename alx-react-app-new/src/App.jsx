@@ -1,8 +1,11 @@
+// src/App.jsx
+
 import React from 'react';
 import Header from './components/Header';
 import UserProfile from './components/UserProfile';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import Counter from './components/Counter'; // Import Counter
 
 function App() {
   return (
@@ -11,9 +14,10 @@ function App() {
       <UserProfile
         name="Alice Smith"
         age={29}
-        bio="I love to travel and explore new cities in my free time."
+        bio="Traveler. Dreamer. City lover."
       />
       <MainContent />
+      <Counter /> {/* Use Counter here */}
       <Footer />
     </div>
   );
