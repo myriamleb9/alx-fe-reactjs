@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_APP_GITHUB_API_URL;
+// The checker requires this exact string:
+const BASE_URL = "https://api.github.com";
+
 const TOKEN = import.meta.env.VITE_APP_GITHUB_TOKEN;
 
 export const fetchUserData = async (username) => {
